@@ -1,0 +1,29 @@
+###Editor
+
+zstyle ':prezto:module:editor' key-bindings 'vi'
+
+# Auto convert .... to ../..
+zstyle ':prezto:module:editor' dot-expansion 'yes'
+
+# Set case-sensitivity for completion, history lookup, etc.
+zstyle ':prezto:*:*' case-sensitive 'no'
+
+# Set the Prezto modules to load (browse modules).
+# The order matters.
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
+  'editor' \
+  'history' \
+  'directory' \
+  'utility' \
+  'completion' \
+  'git' \
+  'archive' \
+  'osx' \
+  'ruby' \
+  'fasd' \
+  'node' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'prompt'

@@ -3,7 +3,7 @@ source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
   echo "Creating a zgen save"
 
-  zegen prezto editor key-bindings 'vi'
+  zgen prezto editor key-bindings 'vi'
   zgen prezto prompt theme 'pure'
 
   zgen prezto
@@ -13,6 +13,13 @@ if ! zgen saved; then
   zgen prezto osx
   zgen prezto history
   zgen prezto directory
+  zgen prezto environment
+  zgen prezto ruby
+  zgen prezto prompt
+  zgen prezto node
+  zgen prezto utility
+  zgen prezto history-substring-search
+  zgen prezto fasd
 
   zgen save
 fi

@@ -25,6 +25,8 @@ if ! zgen saved; then
   zgen save
 fi
 
+export PATH=./node_modules/.bin:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
 if [ -r ~/.zsh_aliases ]; then
   source ~/.zsh_aliases
 fi

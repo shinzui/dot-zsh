@@ -1,0 +1,18 @@
+alias _='sudo'
+alias df='df -h'
+alias g='grep -i'
+alias h='history|g'
+alias rm='rm -i'
+alias rmf='rm -f'
+alias mv='mv -i'
+
+###ruby
+alias gi='gem install --no-rdoc --no-ri'
+alias b='bundle'
+alias bi='b install'
+alias be='b exec'
+
+###npm
+alias ng="npm list -g --depth=0 2>/dev/null"
+alias nl="npm list --depth=0 2>/dev/null"
+

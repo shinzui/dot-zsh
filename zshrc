@@ -23,3 +23,12 @@ if ! zgen saved; then
 
   zgen save
 fi
+
+if [ -r ~/.zsh_aliases ]; then
+  source ~/.zsh_aliases
+fi
+
+if [ -r ~/.zsh_functions ]; then
+  source ~/.zsh_functions
+fi
+

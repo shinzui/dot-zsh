@@ -19,6 +19,7 @@ if ! zgen saved; then
   zgen prezto node
   zgen prezto utility
   zgen prezto history-substring-search
+  zgen prezto completion
   zgen prezto fasd
 
   zgen save

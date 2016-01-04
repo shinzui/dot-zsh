@@ -35,3 +35,5 @@ if [ -r ~/.zsh_functions ]; then
   source ~/.zsh_functions
 fi
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

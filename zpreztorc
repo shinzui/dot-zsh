@@ -8,6 +8,10 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 # Set case-sensitivity for completion, history lookup, etc.
 zstyle ':prezto:*:*' case-sensitive 'no'
 
+zstyle ':prezto:module:prompt' theme 'pure'
+
+
+
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
@@ -27,3 +31,5 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'prompt'
+
+PROMPT='%(?.%F{magenta}.%F{red})${editor_info[keymap]} '

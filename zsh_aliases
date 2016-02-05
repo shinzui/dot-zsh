@@ -5,6 +5,7 @@ alias h='history|g'
 alias rm='rm -i'
 alias rmf='rm -f'
 alias mv='mv -i'
+alias ls='ls -G'
 
 ###ruby
 alias gi='gem install --no-rdoc --no-ri'

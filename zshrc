@@ -5,6 +5,7 @@ if ! zgen saved; then
 
   zgen prezto editor key-bindings 'vi'
   zgen prezto prompt theme 'pure'
+  zgen prezto '*:*' color 'yes'
 
   zgen prezto
   zgen prezto git

@@ -21,6 +21,7 @@ if ! zgen saved; then
   zgen prezto history-substring-search
   zgen prezto completion
   zgen prezto fasd
+  zgen load Tarrasch/zsh-autoenv
 
   zgen save
 fi

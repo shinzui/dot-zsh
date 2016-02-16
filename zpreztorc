@@ -10,7 +10,7 @@ zstyle ':prezto:*:*' case-sensitive 'no'
 
 zstyle ':prezto:module:prompt' theme 'pure'
 
-
+zstyle ":completion:*:commands" rehash 1
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.

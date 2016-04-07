@@ -20,9 +20,15 @@ change_shell() {
 #     git.push
 # }
 
-# pkg.pull() {
-#     git.pull
-# }
+pkg.pull() {
+   git.pull
+
+   # update zgen
+   zgen selfupdate
+
+   #update all zgen plugins and reset
+   zgen update
+}
 
 # pkg.installed() {
 #     git.status

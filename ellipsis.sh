@@ -23,11 +23,15 @@ change_shell() {
 pkg.pull() {
    git.pull
 
+   /usr/local/bin/zsh <<'EOF'
+   source "${HOME}/.zgen/zgen.zsh"
    # update zgen
    zgen selfupdate
 
    #update all zgen plugins and reset
    zgen update
+EOF
+
 }
 
 # pkg.installed() {

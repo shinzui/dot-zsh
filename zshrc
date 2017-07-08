@@ -27,7 +27,9 @@ if ! zgen saved; then
   zgen save
 fi
 
-export PATH=./node_modules/.bin:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$(yarn global bin):./node_modules/.bin:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$GOROOT/bin:$PATH
 
 if [ -r ~/.zsh_aliases ]; then
   source ~/.zsh_aliases

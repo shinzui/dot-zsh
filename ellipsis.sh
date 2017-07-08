@@ -4,7 +4,7 @@
 
 # The following hooks can be defined to customize behavior of your package:
 pkg.install() {
-  git.clone git@github.com:tarjoilija/zgen.git
+  git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 
   change_shell
 }

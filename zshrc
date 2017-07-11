@@ -29,7 +29,7 @@ fi
 
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
-export PATH=$(yarn global bin):./node_modules/.bin:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH=$(yarn global bin):./node_modules/.bin:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$GOROOT/bin:$HOME/Library/Python/2.7/bin/:$PATH
 
 if [ -r ~/.zsh_aliases ]; then
   source ~/.zsh_aliases

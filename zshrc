@@ -39,8 +39,6 @@ if [ -r ~/.zsh_functions ]; then
   source ~/.zsh_functions
 fi
 
-[ -x $(which aws_zsh_completer.sh) ] && source $(which aws_zsh_completer.sh)
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if type rbenv > /dev/null 2>&1; then

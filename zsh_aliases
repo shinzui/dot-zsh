@@ -19,11 +19,11 @@ alias ng="npm list -g --depth=0 2>/dev/null"
 alias nl="npm list --depth=0 2>/dev/null"
 
 ###weather
-alias laWeather="curl -4 http://wttr.in/LA?m"
-alias sfWeather="curl -4 http://wttr.in/SF?m"
-alias seoulWeather="curl -4 http://wttr.in/Seoul?m"
-alias tokyoWeather="curl -4 http://wttr.in/Tokyo?m"
-alias nyWeather="curl -4 http://wttr.in/NY?m"
+alias laWeather="noglob curl -4 http://wttr.in/LA?m"
+alias sfWeather="noglob curl -4 http://wttr.in/SF?m"
+alias seoulWeather="noglob curl -4 http://wttr.in/Seoul?m"
+alias tokyoWeather="noglob curl -4 http://wttr.in/Tokyo?m"
+alias nyWeather="noglob curl -4 http://wttr.in/NY?m"
 
 ###docker
 alias dl="docker ps -l -q"

@@ -53,4 +53,6 @@ if [ -r '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
 
-
+if type kubectl > /dev/null 2>&1; then
+  source <(kubectl completion zsh) 
+fi

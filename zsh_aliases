@@ -34,3 +34,12 @@ alias jest="nocorrect jest"
 
 ###Terraform
 alias tfa="terraform apply -auto-approve"
+
+###Kubernetes
+alias k="kubectl"
+alias kg="kubectl get"
+alias kd="kubectl describe"
+alias kgp="kg pods"
+alias kdp="kd pods"
+alias kgs="kg srv"
+alias kex="kubectl exec -it"

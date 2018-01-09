@@ -31,3 +31,6 @@ alias dl="docker ps -l -q"
 
 ###broken autocorrect
 alias jest="nocorrect jest"
+
+###Terraform
+alias tfa="terraform apply -auto-approve"

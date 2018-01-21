@@ -23,6 +23,7 @@ if ! zgen saved; then
   zgen prezto completion
   zgen prezto fasd
   zgen load Tarrasch/zsh-autoenv
+  # zgen load superbrothers/zsh-kubectl-prompt
 
   zgen save
 fi
@@ -62,3 +63,5 @@ if type helm > /dev/null 2>&1; then
   source <(helm completion zsh)
 fi
 
+# OPAM configuration
+. /Users/shinzui/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

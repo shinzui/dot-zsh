@@ -65,3 +65,6 @@ fi
 
 # OPAM configuration
 . /Users/shinzui/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# opam switch 4.02.3
+eval $(opam config env)

@@ -35,6 +35,7 @@ alias jest="nocorrect jest"
 
 ###Terraform
 alias tfa="terraform apply -auto-approve"
+alias tfp="terraform plan"
 
 ###Kubernetes
 alias k="kubectl"

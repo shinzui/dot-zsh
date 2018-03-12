@@ -8,6 +8,7 @@ alias mv='mv -i'
 alias ls='exa'
 alias tree='exa -T'
 alias vim='nvim'
+alias view='nvim -R'
 
 ###ruby
 alias gi='gem install --no-rdoc --no-ri'

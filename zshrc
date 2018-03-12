@@ -1,3 +1,9 @@
+# zmodload zsh/datetime
+# setopt promptsubst
+# PS4='+$EPOCHREALTIME %N:%i> '
+# exec 3>&2 2>/tmp/startlog.$$
+# setopt xtrace prompt_subst
+
 source "${HOME}/.zgen/zgen.zsh"
 
 if ! zgen saved; then
@@ -44,9 +50,9 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-if type rbenv > /dev/null 2>&1; then
-  eval "$(rbenv init -)"
-fi
+# if type rbenv > /dev/null 2>&1; then
+#   eval "$(rbenv init -)"
+# fi
 
 if [ -r '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc' ]; then
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
@@ -69,3 +75,6 @@ fi
 
 # opam switch 4.02.3
 eval $(opam config env)
+
+# unsetopt xtrace
+# exec 2>&3 3>&-

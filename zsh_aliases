@@ -48,3 +48,6 @@ alias kgs="kg service"
 alias kds="kd service"
 alias kgd="kg deployment"
 alias kex="kubectl exec -it"
+
+###Git
+alias lastgsha1='git log -1 --format="%H"'

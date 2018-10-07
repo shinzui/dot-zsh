@@ -39,6 +39,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!{.git,node_modules}/*"'
 export PATH=$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin/:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$GOROOT/bin:$HOME/Library/Python/2.7/bin/:$PATH
 export EDITOR=nvim
+export BAT_THEME=Nord
 
 if [ -r ~/.zsh_aliases ]; then
   source ~/.zsh_aliases

@@ -74,6 +74,10 @@ if type rustc > /dev/null 2>&1; then
   export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src" 
 fi
 
+# if type rustup > /dev/null 2>&1; then
+#   source <(rustup completions zsh)
+# fi
+
 # OPAM configuration
 . /Users/shinzui/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 

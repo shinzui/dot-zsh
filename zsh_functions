@@ -45,3 +45,9 @@ function prev() {
   PREV=$(fc -lrn | head -n 1)
   sh -c "pet new `printf %q "$PREV"`"
 }
+
+
+function ohome() {
+  URL=$(sed -e 's/^"//' -e 's/"$//' <<< $(opam show -f homepage: $1))
+  open -a "Google Chrome" "$URL" --args '--new-window'
+}

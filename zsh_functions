@@ -51,3 +51,8 @@ function ohome() {
   URL=$(sed -e 's/^"//' -e 's/"$//' <<< $(opam show -f homepage: $1))
   open -a "Google Chrome" "$URL" --args '--new-window'
 }
+
+function chome() {
+  URL=$(sed -e 's/^"//' -e 's/"$//' <<< $(cargo show --json $1 | jq .crate.repository))
+  open -a "Google Chrome" "$URL" --args '--new-window'
+}

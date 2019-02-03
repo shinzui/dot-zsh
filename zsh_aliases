@@ -57,4 +57,5 @@ alias fixcamera='sudo killall VDCAssistant'
 
 
 ### work
-alias redisbox='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n prod -- sh'
+alias redisbox_prod='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n prod -- sh'
+alias redisbox_staging='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n test -- sh'

@@ -54,3 +54,7 @@ alias lastgsha1='git log -1 --format="%H"'
 
 ###mac os
 alias fixcamera='sudo killall VDCAssistant'
+
+
+### work
+alias redisbox='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n prod -- sh'

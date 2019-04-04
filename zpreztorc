@@ -2,8 +2,8 @@
 
 zstyle ':prezto:module:editor' key-bindings 'vi'
 
-# Auto convert .... to ../..
-zstyle ':prezto:module:editor' dot-expansion 'yes'
+# enable the prompt context to be set
+zstyle ':prezto:module:editor' ps-context 'yes'
 
 # Set case-sensitivity for completion, history lookup, etc.
 zstyle ':prezto:*:*' case-sensitive 'no'

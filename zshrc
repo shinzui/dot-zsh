@@ -65,7 +65,7 @@ if [ -r '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion
 fi
 
 if type kubectl > /dev/null 2>&1; then
-  source <(kubectl completion zsh) 
+  source <(kubectl completion zsh)
 fi
 
 if type helm > /dev/null 2>&1; then
@@ -73,7 +73,7 @@ if type helm > /dev/null 2>&1; then
 fi
 
 if type rustc > /dev/null 2>&1; then
-  export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src" 
+  export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 fi
 
 # if type rustup > /dev/null 2>&1; then

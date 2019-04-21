@@ -40,6 +40,7 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden --follow --glob 
 export PATH=$HOME/.local/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin/:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$GOROOT/bin:$HOME/Library/Python/2.7/bin/:$PATH
 export EDITOR=nvim
 export BAT_THEME=Nord
+export MANPAGER="nvim -c 'set ft=man' -"
 
 if [ -r ~/.zsh_aliases ]; then
   source ~/.zsh_aliases

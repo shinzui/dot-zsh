@@ -76,6 +76,10 @@ if type rustc > /dev/null 2>&1; then
   export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 fi
 
+if type stack > /dev/null 2>&1; then
+  eval "$(stack --bash-completion-script stack)"
+fi
+
 # if type rustup > /dev/null 2>&1; then
 #   source <(rustup completions zsh)
 # fi

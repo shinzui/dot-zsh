@@ -36,7 +36,7 @@ fi
 
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden --follow --glob "!{.git,node_modules,_build,_opam}/*"'
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,node_modules,_build,_opam}/*"'
 export PATH=$HOME/.local/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin/:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$GOROOT/bin:$HOME/Library/Python/2.7/bin/:$PATH
 export EDITOR=nvim
 export BAT_THEME=Nord

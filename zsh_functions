@@ -91,3 +91,8 @@ function chome() {
   URL=$(sed -e 's/^"//' -e 's/"$//' <<< $(cargo show --json $1 | jq .crate.repository))
   open -a "Google Chrome" "$URL" --args '--new-window'
 }
+
+function hhome() {
+  URL=$(hoogle search -q -n=1 -l "+$1"  |perl -pe 's|.*?--\s*||')
+  open -a "Google Chrome" "$URL" --args '--new-window'
+}

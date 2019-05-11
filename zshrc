@@ -38,7 +38,7 @@ export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,node_modules,_build,_opam}/*"'
 export NODE_HOME='/usr/local/opt/node@8'
-export PATH=$HOME/.local/bin:$NODE_HOME/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin/:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$GOROOT/bin:$HOME/Library/Python/2.7/bin/:$PATH
+export PATH=$HOME/.local/bin:$NODE_HOME/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin/:$HOME/bin:$HOME/.ellipsis/bin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$GOROOT/bin:$HOME/.krew/bin:$HOME/Library/Python/2.7/bin/:$PATH
 export EDITOR=nvim
 export BAT_THEME=Nord
 export MANPAGER="nvim -c 'set ft=man' -"

@@ -44,6 +44,7 @@ alias kex="kubectl exec -it"
 
 ###Git
 alias lastgsha1='git log -1 --format="%H"'
+alias gdiff='git diff --color-moved=dimmed_zebra --color-moved-ws=allow-indentation-change'
 
 ###mac os
 alias fixcamera='sudo killall VDCAssistant'

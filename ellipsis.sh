@@ -9,6 +9,15 @@ pkg.install() {
   change_shell
 }
 
+pkg.link() {
+  keybase decrypt -i zsh_secrets.encrypted -o zsh_secrets
+  fs.link_file zshrc
+  fs.link_file zsh_functions
+  fs.link_file zsh_aliases
+  fs.link_file zsh_secrets
+  fs.link_file zpreztorc
+}
+
 change_shell() {
   if [ "$(command -v zsh)" != "$SHELL" ]; then
     echo "Changing shell to zsh"

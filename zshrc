@@ -47,6 +47,10 @@ if [ -r ~/.zsh_aliases ]; then
   source ~/.zsh_aliases
 fi
 
+if [ -r ~/.zsh_secrets ]; then
+  source ~/.zsh_secrets
+fi
+
 if [ -r ~/.zsh_functions ]; then
   source ~/.zsh_functions
 fi

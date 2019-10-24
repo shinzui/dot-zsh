@@ -53,3 +53,6 @@ alias fixcamera='sudo killall VDCAssistant'
 ### work
 alias redisbox_prod='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n prod -- sh'
 alias redisbox_staging='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n test -- sh'
+alias cloudsql_staging='cloud_sql_proxy --instances="tan-ng:us-west1:master-database=tcp:5433" --dir=/tmp'
+alias cloudsql_prod='cloud_sql_proxy --instances="tan-ng-prod:us-west1:prod-master-database=tcp:5435" --dir=/tmp'
+alias cloudsql_prod_analytics='cloud_sql_proxy --instances="tan-ng-prod:us-west1:prod-analytics-database=tcp:5437" --dir=/tmp'

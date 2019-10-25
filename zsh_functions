@@ -96,3 +96,7 @@ function hhome() {
   URL=$(hoogle search -q -n=1 -l "+$1"  |perl -pe 's|.*?--\s*||')
   open -a "Google Chrome" "$URL" --args '--new-window'
 }
+
+function kubesecret() {
+  kg secret "$1"  -n "$2" -o json | jq ".data | map_values(@base64d)"
+}

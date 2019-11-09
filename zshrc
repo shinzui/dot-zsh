@@ -56,6 +56,8 @@ if [ -r ~/.zsh_functions ]; then
   source ~/.zsh_functions
 fi
 
+source ~/.nix-profile/etc/profile.d/nix.sh
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # if type rbenv > /dev/null 2>&1; then

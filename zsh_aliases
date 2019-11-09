@@ -49,6 +49,10 @@ alias gdiff='git diff --color-moved=dimmed_zebra --color-moved-ws=allow-indentat
 ###mac os
 alias fixcamera='sudo killall VDCAssistant'
 
+###Haskell
+##Stack
+alias shb="stack build --file-watch --fast"
+
 
 ### work
 alias redisbox_prod='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n prod -- sh'

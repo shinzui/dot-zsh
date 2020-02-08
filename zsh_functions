@@ -100,3 +100,7 @@ function hhome() {
 function kubesecret() {
   kg secret "$1"  -n "$2" -o json | jq ".data | map_values(@base64d)"
 }
+
+function scaledown() {
+  kubectl scale --replicas 0 -n test "deployment/"$1
+}

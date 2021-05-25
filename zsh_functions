@@ -104,3 +104,7 @@ function kubesecret() {
 function scaledown() {
   kubectl scale --replicas 0 -n test "deployment/"$1
 }
+
+function gsubscriptions() {
+   gcloud pubsub subscriptions list --project=$1 --format='table[box](name)'
+}

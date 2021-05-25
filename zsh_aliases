@@ -43,7 +43,7 @@ alias kgd="kg deployment"
 alias kex="kubectl exec -it"
 
 ###Git
-alias lastgsha1='git log -1 --format="%H"'
+alias lastgsha1='git rev-parse HEAD'
 alias gdiff='git diff --color-moved=dimmed_zebra --color-moved-ws=allow-indentation-change'
 alias gtags='git tag | gsort -V'
 
@@ -59,5 +59,12 @@ alias shb="stack build --file-watch --fast"
 alias redisbox_prod='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n prod -- sh'
 alias redisbox_staging='k run -i --rm --tty redisbox --image=gcr.io/google_containers/redis:v1 --restart=Never -n test -- sh'
 alias cloudsql_staging='cloud_sql_proxy --instances="tan-ng:us-west1:master-database=tcp:5433" --dir=/tmp'
+alias cloudsql_staging_12='cloud_sql_proxy --instances="tan-ng:us-west1:stage-master-database=tcp:5443" --dir=/tmp'
 alias cloudsql_prod='cloud_sql_proxy --instances="tan-ng-prod:us-west1:prod-master-database=tcp:5435" --dir=/tmp'
+alias cloudsql_prod_12='cloud_sql_proxy --instances="tan-ng-prod:us-west1:prod-master2-database=tcp:5445" --dir=/tmp'
 alias cloudsql_prod_analytics='cloud_sql_proxy --instances="tan-ng-prod:us-west1:prod-analytics-database=tcp:5437" --dir=/tmp'
+alias staging_subs="gcloud pubsub subscriptions list --project=tan-ng --format='table[box](name)'"
+alias staging_topics="gcloud pubsub topics list --project=tan-ng --format='table[box](name)'"
+alias prod_subs="gcloud pubsub subscriptions list --project=tan-ng-prod --format='table[box](name)'"
+alias flagr_staging="k port-forward -n test svc/flagr 10090:18000"
+alias flagr_prod="k port-forward -n prod svc/flagr 10100:18000"

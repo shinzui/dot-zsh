@@ -107,6 +107,8 @@ fi
 # opam switch 4.02.3
 eval $(opam config env)
 
+eval "$(direnv hook zsh)"
+
 eval "$(starship init zsh)"
 
 eval "$(navi widget zsh)"

@@ -73,14 +73,6 @@ if [ -r '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion
   source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
 
-if [[ -r "/usr/local/opt/mcfly/mcfly.zsh" ]]; then
-  source "/usr/local/opt/mcfly/mcfly.zsh"
-  setopt autocd
-fi
-
-export MCFLY_KEY_SCHEME=vim
-export MCFLY_FUZZY=true
-
 if type kubectl > /dev/null 2>&1; then
   source <(kubectl completion zsh)
 fi
